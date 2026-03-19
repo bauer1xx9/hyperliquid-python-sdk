@@ -493,7 +493,7 @@ class Exchange(API):
             action,
             signature,
             timestamp,
-        )
+        ), timestamp
 
     def sub_account_transfer(self, sub_account_user: str, is_deposit: bool, usd: int) -> Any:
         timestamp = get_timestamp_ms()
